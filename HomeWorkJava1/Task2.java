@@ -1,12 +1,12 @@
 package HomeWorkJava1;
 
 public class Task2 {
-
+    public class PrimeNumbers {
     public static void main(String[] args) {
         int i, j;
         boolean isPrime;
 
-        System.out.println("Prime numbers from 1 to 1000:");
+        System.out.println("Простые числа от 1 до 1000:");
 
         for (i = 2; i <= 1000; i++) {
             isPrime = true;
@@ -23,4 +23,5 @@ public class Task2 {
             }
         }
     }
+}
 }
