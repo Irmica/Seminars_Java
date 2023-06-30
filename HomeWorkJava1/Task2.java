@@ -17,11 +17,13 @@ public class Task2 {
     static void primeNumbers(int n) {
         for (int i = 3; i <= n; i += 2) {
             boolean c = true;
-            for(int j = 2; j < i; j++){
-                if(i%j==0) c =false;
-                }
-            if(c) System.out.println(i);
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0)
+                    c = false;
             }
+            if (c)
+                System.out.println(i);
         }
+    }
 
 }
