@@ -3,12 +3,7 @@ package HomeWorkJava2;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.Level;
-import java.util.logging.SimpleFormatter;
 
 //2) Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
 public class Task2 {
