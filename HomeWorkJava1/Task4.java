@@ -45,9 +45,9 @@ public class Task4 {
             return units;
         } else {
             char charAtIndex2 = element.charAt(0);
-            System.out.println(charAtIndex2);
+           // System.out.println(charAtIndex2);
             int units2 = Character.digit(charAtIndex2, (10));
-            System.out.println(units2);
+           // System.out.println(units2);
             return units2 * 10;
         }
     }
