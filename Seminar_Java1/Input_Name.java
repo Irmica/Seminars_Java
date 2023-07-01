@@ -1,18 +1,21 @@
-// Написать программу, которая запросит пользователя ввести
-// <Имя> в консоли.
-// 📌 Получит введенную строку и выведет в консоль сообщение
-// “Привет, <Имя>!”
-
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthSpinnerUI;
-
-public class Input_Name {
+public class EquationSolver {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in, "Cp866");
-        System.out.println("Введите имя: ");
-        String name = scanner.nextLine();
-        System.out.println("Привет, " + name + "!");
+        Scanner scanner = new Scanner(System.in);
+        String equation = scanner.nextLine();
+
+        // Разбиваем уравнение на две части
+        String[] parts = equation.split(" + ");
+        int q = Integer.parseInt(parts[0].replace("?", "0"));
+        int w = Integer.parseInt(parts[1].replace("?", "0"));
+
+        if (q + w == Integer.parseInt(equation.replace("?", ""))) {
+            System.out.println("Equation solved");
+        } else {
+            System.out.println("No solution found");
+        }
+
         scanner.close();
     }
 }
