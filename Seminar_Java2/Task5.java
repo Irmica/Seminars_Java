@@ -20,7 +20,7 @@ public class Task5 {
         addListToFile(pathFile2, showCurrentFile(pathProject));
     }
 
-    static String[] showCurrentFile(String dirPath) {
+    static String[] showCurrentFile(String dirPath) { // Задача метода вернуть список файлов в указанной директории(dirPath)
         File currentDir = new File(dirPath);
         return currentDir.list();
 
