@@ -15,7 +15,7 @@ import java.util.logging.SimpleFormatter;
 public class Task5 {
     public static void main(String[] args) throws SecurityException, IOException{
         String pathProject = System.getProperty("user.dir") ;
-        String pathFile1 = pathProject.concat("\\Seminar_Java2\\Seminar2-1.txt");
+        //String pathFile1 = pathProject.concat("\\Seminar_Java2\\Seminar2-1.txt");
         String pathFile2 = pathProject.concat("\\Seminar_Java2\\Seminar2-2.txt");
         addListToFile(pathFile2, showCurrentFile(pathProject));
     }
