@@ -1,0 +1,53 @@
+package HomeWorkJava3;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Set;
+
+//Для списка из задачи про Солнечную систему удалить все повторяющиеся элементы.
+public class Task2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите количество элементов списка:");
+        int n = sc.nextInt();
+        sc.close();
+
+        ArrayList<String> planet = new ArrayList<>() {
+            {
+                add("Меркурий");
+                add("Венера");
+                add("Земля");
+                add("Марс");
+                add("Юпитер");
+                add("Сатурн");
+                add("Уран");
+                add("Нептун");
+            }
+        };
+
+        ArrayList<String> morePlanet = randomStringArray(planet, n);
+        System.out.println(morePlanet.toString());
+        Set newSet = noRepetitions(morePlanet);
+        System.out.println(newSet.toString());
+
+
+    }
+
+    static ArrayList<String> randomStringArray(ArrayList<String> sourceArray, int n) {
+        Random rand = new Random();
+        ArrayList<String> myNewArray = new ArrayList<>(n);
+        for (int i = 0; i < n; i++) {
+            int randomIndex = rand.nextInt(sourceArray.size());
+            String temp = sourceArray.get(randomIndex);
+            myNewArray.add(temp);
+        }
+        return myNewArray;
+    }
+
+    static Set<String> noRepetitions(ArrayList<String> sourceArray){
+        Set<String> mySet = Set.copyOf(sourceArray);
+        return mySet;
+    }
+    }
+
