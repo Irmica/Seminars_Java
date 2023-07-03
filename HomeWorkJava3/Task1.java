@@ -15,7 +15,10 @@ public class Task1 {
         System.out.println(sourceList.toString());
         int m = minValue(sourceList, 20);
         System.out.println(m);
+        int max = maxValue(sourceList);
+        System.out.println(max);
         double av = averageValue(sourceList);
+        System.out.println(av);
         removingEvenNumbers(sourceList);
         System.out.println(sourceList.toString());
 
