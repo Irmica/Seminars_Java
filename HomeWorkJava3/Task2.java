@@ -28,7 +28,7 @@ public class Task2 {
 
         ArrayList<String> morePlanet = randomStringArray(planet, n);
         System.out.println(morePlanet.toString());
-        Set newSet = noRepetitions(morePlanet);
+        Set<String> newSet = noRepetitions(morePlanet);
         System.out.println(newSet.toString());
 
 
