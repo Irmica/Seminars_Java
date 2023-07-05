@@ -10,7 +10,7 @@ import java.util.Scanner;
 // 3. Если введено revert - удаляет предыдущую введенную строку из памяти.
 public class Task3 {
     public static void main(String[] args) {
-redString();
+        redString();
     }
 
     static void redString() {
@@ -20,22 +20,24 @@ redString();
         while (true) {
             System.out.println("Input something or print or revert or end");
             data = input.nextLine();
-            if (data.equals("end"))
+            if (data.equals("end")){
+                input.close();
                 return;
+            }
             changingList(myList, data);
-            // input.close();
             // System.out.println(myList);
         }
-
     }
 
     static void changingList(Deque<String> myList, String data) {
         if (data.equals("print")) {
             for (String string : myList) {
-                    System.out.println(string);}
-            } else if (data.equals("revert")){
-                myList.pollFirst();
-            }else{myList.addFirst(data);}
+                System.out.println(string);
+            }
+        } else if (data.equals("revert")) {
+            myList.pollFirst();
+        } else {
+            myList.addFirst(data);
         }
+    }
 }
-
