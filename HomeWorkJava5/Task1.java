@@ -29,6 +29,7 @@ public class Task1 {
                     System.out.println(phoneBook);
                     break;
             }
+            in.close();
         }
     }
 
@@ -44,6 +45,7 @@ public class Task1 {
             LinkedList<String> temp = phoneBook.get((words[0]));
             temp.add(words[1]);
         }
+        input.close();
         return phoneBook;
     }
 
