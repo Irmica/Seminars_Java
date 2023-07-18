@@ -10,5 +10,6 @@ public class Task1 {
         System.out.println(cat2.speak());
         cat1.aboutCat();
         cat2.aboutCat();
-    }
+
+}
 }

@@ -7,7 +7,7 @@ public class Cat {
     Character sex;
     double weight;
 
-    public Cat(String name, int age, Character sex, double weight) {
+    public Cat(String name, int age, Character sex, double weight) { // конструктор экземпляра класса
         this.name = name;
         this.age = age;
         this.sex = sex;
